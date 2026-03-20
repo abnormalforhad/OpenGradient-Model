@@ -13,9 +13,9 @@ const navHtml = `
       </div>
     </div>
     <div class="flex items-center gap-4">
-      <button class="px-5 py-2 rounded-full bg-gradient-to-r from-primary to-primary-container text-white text-sm font-semibold hover:opacity-90 active:scale-95 shadow-md hover:shadow-lg transition-all">
+      <a href="https://www.opengradient.ai/" target="_blank" class="px-5 py-2 rounded-full bg-gradient-to-r from-primary to-primary-container text-white text-sm font-semibold hover:opacity-90 active:scale-95 shadow-md hover:shadow-lg transition-all inline-block">
         Get Started
-      </button>
+      </a>
     </div>
   </div>
   <div class="bg-zinc-100/50 dark:bg-zinc-800/50 h-px w-full"></div>
@@ -32,24 +32,24 @@ const footerHtml = `
     <div class="space-y-4">
       <h4 class="text-xs font-label uppercase tracking-widest text-zinc-900 dark:text-zinc-50">Resources</h4>
       <ul class="space-y-2">
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">GitHub</a></li>
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">Docs</a></li>
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">Newsletter</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://github.com/OpenGradient" target="_blank">GitHub</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://docs.opengradient.ai/" target="_blank">Docs</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://www.opengradient.ai/blog" target="_blank">Blog</a></li>
       </ul>
     </div>
     <div class="space-y-4">
       <h4 class="text-xs font-label uppercase tracking-widest text-zinc-900 dark:text-zinc-50">Community</h4>
       <ul class="space-y-2">
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">X</a></li>
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">Discord</a></li>
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">LinkedIn</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://x.com/OpenGradient" target="_blank">X</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://discord.com/invite/2t5sx5BCpB" target="_blank">Discord</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://www.linkedin.com/company/opengradientlabs/" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
     <div class="space-y-4">
       <h4 class="text-xs font-label uppercase tracking-widest text-zinc-900 dark:text-zinc-50">Legal</h4>
       <ul class="space-y-2">
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">Privacy</a></li>
-        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="#">Terms</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://opengradient.medium.com/" target="_blank">Medium</a></li>
+        <li><a class="text-xs font-body text-zinc-500 hover:underline decoration-teal-500 underline-offset-4" href="https://x.com/i/communities/1978779669693362400" target="_blank">X Community</a></li>
       </ul>
     </div>
   </div>

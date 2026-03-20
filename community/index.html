@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Community | OpenGradient</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Space+Grotesk:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="/src/tailwind-config.js"></script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+    h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    .editorial-shadow { box-shadow: 0 40px 60px -15px rgba(25, 28, 26, 0.05); }
+    .glass-card { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(16px); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+  </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+  <div id="layout-nav"></div>
+  <main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-20">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="font-label uppercase tracking-widest text-primary font-bold text-xs mb-4 block">Our Voice</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight text-on-surface leading-[1.1]">
+                        The <span class="text-primary italic">Luminous</span> Curator
+                    </h1>
+</div>
+<div class="max-w-sm">
+<p class="text-on-surface-variant font-body leading-relaxed">
+                        Deep dives into the decentralized intelligence ecosystem. From technical breakthroughs to community governance updates.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Bento Grid: Featured & Events -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+<!-- Featured Article -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20 grayscale group-hover:grayscale-0 transition-all duration-700" alt="Abstract neural network nodes in teal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoqv6AL-TWQxYqc8-UbqShBFkjGQt5V0kx9Ocz0olwZQA-mtUbXBNySBA8JPrU5qbpm4JbcMjSsyZRmgt2252Y-PAiLYk9ZitvceNmb3urKTZ91C73nCvkBy4f_pwXyDF-025eJe1cRnolPKCtmCG59gs10AxQxA5tCRYvIfqy28NLKTKYbBrA66wmTFyXkG6twpwQKNO0D0uEijgc020Py3R7BoEVfLSlMXOAXOJU8GnThUWZ4TDrH-W3pWPc7bGPbIdAjkAGGNr8"/>
+</div>
+<div class="relative z-10 p-10 h-full flex flex-col justify-end min-h-[450px]">
+<span class="font-label text-xs uppercase tracking-widest text-primary mb-4 block">Feature Story</span>
+<h2 class="text-3xl md:text-4xl font-headline font-bold mb-6 max-w-xl">Architecting Trustless Inference for the Open Web</h2>
+<div class="flex items-center gap-6 text-sm font-label text-on-surface-variant">
+<span>OCT 24, 2024</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>12 MIN READ</span>
+</div>
+</div>
+</div>
+<!-- Events & Notices -->
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="bg-primary-container/10 p-8 rounded-xl flex-1 border border-primary/10">
+<div class="flex items-center justify-between mb-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">Upcoming Events</span>
+<span class="material-symbols-outlined text-primary" data-icon="calendar_today">calendar_today</span>
+</div>
+<div class="space-y-8">
+<div class="group cursor-pointer">
+<span class="text-[10px] font-label text-primary/60 font-bold block mb-1">NOV 12 • 18:00 UTC</span>
+<h3 class="font-headline font-bold text-lg group-hover:text-primary transition-colors">Governance Town Hall #14</h3>
+<p class="text-xs text-on-surface-variant mt-2 font-body">Quarterly roadmap review and voting on Protocol Upgrade 2.1</p>
+</div>
+<div class="group cursor-pointer">
+<span class="text-[10px] font-label text-primary/60 font-bold block mb-1">NOV 20 • 14:00 UTC</span>
+<h3 class="font-headline font-bold text-lg group-hover:text-primary transition-colors">Builder Workshop: Edge Models</h3>
+<p class="text-xs text-on-surface-variant mt-2 font-body">Hands-on session with our new pruning toolkit.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between">
+<h3 class="font-headline font-bold text-xl mb-4">Join the Lab</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6">Our community Discord is the heartbeat of OpenGradient development.</p>
+<button class="w-full py-3 rounded-full border border-primary text-primary font-label font-bold text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all">Connect Discord</button>
+</div>
+</div>
+</section>
+<!-- Article Feed Grid -->
+<section class="mb-24">
+<div class="flex items-center justify-between mb-12">
+<h2 class="text-3xl font-headline font-bold">Latest Perspectives</h2>
+<div class="flex gap-4">
+<button class="p-2 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="filter_list">filter_list</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Article Card 1 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Abstract smooth gradient of teal and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3GHcxzPGfYznK_g54fQodFDPYcVqaHJqtORmn4NrHFsITt03t1S3geaXRaeNJPQ8A-qBBQHbo5rxs7iXbn1z-WTZEYZNmYcRiujT3ePtvYr0Rx6H-r5H252fjQkDnlGQ2ci_ln5TkP2t4USd30skUFuHJx6ztxuYdww0bc3zkPU0A6_YI4XE3Ygbbs8c2ZP00cTqdMjla8eN6qrAFr1Hy7DOMgAZXLpOrcBqy4dbOI7FecEMpGaxWxL_SQDF3dE_6cU_vJGC-2MRo"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2 py-1 rounded bg-surface-container-high text-[10px] font-label font-bold uppercase tracking-tighter text-on-surface-variant">Ecosystem</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">Oct 18, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Privacy-Preserving AI: The Gradient Path</h3>
+<p class="text-sm text-on-surface-variant font-body mb-4 line-clamp-2">Exploring how zero-knowledge proofs are redefining the relationship between user data and large language models.</p>
+<span class="text-xs font-label font-bold text-primary group-hover:underline">Read Story 08m</span>
+</article>
+<!-- Article Card 2 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Futuristic architectural wave pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnDfqCO30Fu2wsoEFLkse2Pls0qK6q3B3YyJN_srUWilryxwKHgX73X5-q1-nbhxgqV3dJhvdIiRu8ochrhNP18xs0aK2ka3wJivn2bhi6BJ1b9fbYpfNChTu9hPkerHutQLgNmF-XQJmRPqTv4DSppFRiz27dRNry0_glStyMx06lWNlzAHIN9qrYH3Mv6LP9PsxZ2Rp8TdRGPNrFKvvl0nrLb-XbSCI00NOabdziwl0ssCVvNRfg0lYYiQJ9J0NVl60t5SgJ4MgV"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2 py-1 rounded bg-surface-container-high text-[10px] font-label font-bold uppercase tracking-tighter text-on-surface-variant">Research</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">Oct 12, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Optimizing On-Chain Computation</h3>
+<p class="text-sm text-on-surface-variant font-body mb-4 line-clamp-2">New compression algorithms allow for complex model inference directly within the smart contract execution environment.</p>
+<span class="text-xs font-label font-bold text-primary group-hover:underline">Read Story 14m</span>
+</article>
+<!-- Article Card 3 -->
+<article class="group">
+<div class="aspect-[16/10] rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Minimal server rack glowing subtle teal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBldJOMbGRNg4mnoCNDvDyHVbw4vWHQYtIsp4-4YM41LO67HIWen9yta8EhSmLekeqVTSW3r0M_k3PaDcBa6zfSbEizjN_GrAb6AKG1pQJrR8NlDB3hLmObqsYSdeCsYBDxxVnk2RDwHN9wuIJdL2L43eU3p_9iMNY4VYVCiipcWzC9KY82HUe7Mg-VQ5udZ_0AMbCgcO6xdyt2tcgraoDbujNEdUOci3xf47fWe4VSWgEO6wmHQhNmoTQgjugjhggSZM1xkQ_zCIrJ"/>
+</div>
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2 py-1 rounded bg-surface-container-high text-[10px] font-label font-bold uppercase tracking-tighter text-on-surface-variant">Engineering</span>
+<span class="text-[10px] font-label text-outline uppercase tracking-widest">Oct 05, 2024</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3 leading-tight group-hover:text-primary transition-colors">Distributed Nodes: A New Incentive Layer</h3>
+<p class="text-sm text-on-surface-variant font-body mb-4 line-clamp-2">How we're rewarding hardware providers who maintain the network's high-availability requirements.</p>
+<span class="text-xs font-label font-bold text-primary group-hover:underline">Read Story 06m</span>
+</article>
+</div>
+</section>
+<!-- Social Connections (Editorial Layout) -->
+<section class="py-24 border-y border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-headline font-bold mb-6">Stay in the Loop</h2>
+<p class="text-on-surface-variant mb-12 max-w-md">Our community is distributed globally. Follow our primary channels for real-time updates, engineering logs, and community snapshots.</p>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center gap-3 px-6 py-4 rounded-xl bg-surface-container-lowest border border-outline-variant/10 hover:shadow-xl hover:shadow-primary/5 transition-all" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="grid_view">grid_view</span>
+<span class="font-headline font-bold">X (Twitter)</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-4 rounded-xl bg-surface-container-lowest border border-outline-variant/10 hover:shadow-xl hover:shadow-primary/5 transition-all" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="forum">forum</span>
+<span class="font-headline font-bold">Discord</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-4 rounded-xl bg-surface-container-lowest border border-outline-variant/10 hover:shadow-xl hover:shadow-primary/5 transition-all" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="work">work</span>
+<span class="font-headline font-bold">LinkedIn</span>
+</a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/5 blur-3xl rounded-full"></div>
+<div class="relative glass-panel p-8 rounded-2xl border border-white/40">
+<h4 class="font-headline font-bold text-lg mb-4">Curated Newsletter</h4>
+<p class="text-xs text-on-surface-variant mb-6 font-body">Bi-weekly insights on the state of AI &amp; Blockchain. No spam, just signal.</p>
+<form class="space-y-4">
+<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-primary focus:bg-white transition-all" placeholder="curator@example.com" type="email"/>
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-bold text-xs uppercase tracking-widest">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+  <div id="layout-footer"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

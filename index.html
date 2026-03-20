@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>OpenGradient</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Space+Grotesk:wght@500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="/src/tailwind-config.js"></script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+    h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    .editorial-shadow { box-shadow: 0 40px 60px -15px rgba(25, 28, 26, 0.05); }
+    .glass-card { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(16px); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+  </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+  <div id="layout-nav"></div>
+  <main class="pt-16">
+<!-- Hero Section -->
+<section class="relative overflow-hidden py-24 md:py-32 lg:py-48 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8 z-10">
+<span class="label-md uppercase tracking-widest font-label text-primary font-bold">Intelligence for All</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight text-on-surface">
+                        The Network for <br/> <span class="bg-gradient-to-r from-primary to-tertiary bg-clip-text text-transparent">Open Intelligence</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Scale decentralized machine learning with the world's most performant and accessible infrastructure. Open source AI, redefined.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-primary-container text-white text-base font-semibold editorial-shadow hover:scale-[1.02] active:scale-95 transition-all">
+                            Explore Models
+                        </button>
+<button class="px-8 py-4 rounded-full border border-outline-variant/30 text-primary font-semibold hover:bg-surface-container-low transition-colors">
+                            View Documentation
+                        </button>
+</div>
+</div>
+<div class="flex-1 relative w-full aspect-square md:aspect-auto">
+<!-- Abstract Hero Visual -->
+<div class="absolute inset-0 bg-primary/5 rounded-[3rem] rotate-3 blur-3xl"></div>
+<div class="relative editorial-shadow rounded-3xl overflow-hidden bg-surface-container-lowest border border-outline-variant/10 aspect-video md:aspect-square flex items-center justify-center p-12">
+<div class="grid grid-cols-2 gap-4 w-full h-full opacity-80">
+<div class="bg-surface-container-low rounded-2xl flex flex-col items-center justify-center p-6 space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="hub">hub</span>
+<div class="h-2 w-24 bg-outline-variant/20 rounded-full"></div>
+<div class="h-2 w-16 bg-outline-variant/20 rounded-full"></div>
+</div>
+<div class="bg-primary/10 rounded-2xl flex flex-col items-center justify-center p-6 space-y-4 translate-y-8">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="model_training">model_training</span>
+<div class="h-2 w-24 bg-primary/20 rounded-full"></div>
+<div class="h-2 w-16 bg-primary/20 rounded-full"></div>
+</div>
+<div class="bg-secondary-container/20 rounded-2xl flex flex-col items-center justify-center p-6 space-y-4 -translate-y-4">
+<span class="material-symbols-outlined text-4xl text-secondary" data-icon="neurology">neurology</span>
+<div class="h-2 w-24 bg-secondary/20 rounded-full"></div>
+<div class="h-2 w-16 bg-secondary/20 rounded-full"></div>
+</div>
+<div class="bg-surface-container-high rounded-2xl flex flex-col items-center justify-center p-6 space-y-4">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant" data-icon="database">database</span>
+<div class="h-2 w-24 bg-outline-variant/20 rounded-full"></div>
+<div class="h-2 w-16 bg-outline-variant/20 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-surface to-transparent"></div>
+</section>
+<!-- Partners Section -->
+<section class="py-16 bg-surface-container-low/30 px-8">
+<div class="max-w-7xl mx-auto text-center space-y-10">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60 font-medium">Trusted by industry leaders and innovators</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Partner Logo" class="h-8 md:h-10" alt="Stripe logo in grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKyExNB_xhgX7K9xLMLf3YTB4GxeziFLjNYaq4qI0uPIoy1cEJsmxQUJmAmO3PxgSPlI1MKXYFF5Z_OiMJefvwOP3I_qiK6nmykSgvHLiCexNdvYLqfzf-yiZ1qIN5J3k3CsimlC7_qHkczXbMahMlrxKASWWhqiiGNCKNSCeUZZFnoxe2jZUgAU3tMM5Yy0E_owcCuVJIsOwJ2vw0erA99iqTwS_KVamvmvq0FwSW7a-9zdEG2VNKKDwa8X9iI_bzS-Q_F-XdHJkC"/>
+<img alt="Partner Logo" class="h-6 md:h-8" alt="Anthropic logo in grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSsUhP7FbBBO5lUhV4cOp-Aoty_xBntvimk1DEoQVRI4i_AkjMzGfu3_6abOypG5R51OIc5INv3rDGR9_DjNgyxctQcIOozDG7rCvWfTQAtZyFpvAJJqlvYu66IcNtE4vhYBIRZdm1cdmnZP1PJy6BkSSbv6l7ko41LjG-VCvXXB27qblh_Czw5c7jf1titqd9cYiHII7dxIL40GnBJJaN3ku3eJIFF9QVzRGqeWyRXPpA_yfg916YTLila31oDTyV1N0l3xLUgPr-"/>
+<img alt="Partner Logo" class="h-8 md:h-10" alt="a16z logo in grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQqBpuvPhmGg3W1-yvVVSwMz46l-KvzEZ5cKW4ClcehxJd0EKJ7BO8ugQhLeF8hOsQo1iABpevvMxnHK7LetOhc5K5UiGeP1cTVNOzHqsPFgmNpcd3S_QxTXCsaEBsnpkK89e3VBgp8A97YiLZVklYOqf7V6zKynrEb28SaPYUEsrDZx7-tLCfLF11fyx3hLTMxDdD3AbznjOdbqPoz4bpvD05rSZyPMUjKyZeN_TiEzaKAJjDKlLyMZ-rsDPPz_u_EA4BQXo16Brs"/>
+<img alt="Partner Logo" class="h-8 md:h-10" alt="Coinbase logo in grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA67gdXkyVnIIqEq7zU2aPTVeaXhjkxUlrZCa_SQCnFrtHcKMfUhsDI_kTVmL01ZskG89QvPJveTeZaKE-PFTgvKxQGeFugHAGRtyXtqrkhqW0eLAcp0_RqouGX0PNIUKUxqfqD7iEb6zZFxQhV7ca9_ZNO-ea-po4x4SXycCsKtFwIbJHXbuqUX0j2m7b86F9ZsFcl5h8Pkh02PUqIuJHyMCr6MYMVm4U0qRl0ZicgduHMrgAWs_DqW2GeyEL_3SoygdAIINpm2jlN"/>
+<img alt="Partner Logo" class="h-8 md:h-10" alt="Nvidia logo in grayscale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI-4el26qzVmEWT0_hy50VBuv4t6CO4-_xvJNblYw_9xfh9qPll2lLTMxDEYXYzktEary2VPyRDPwl7NwRpORgin4QJ3ALHt9IrBlLxILghhO72QXaK9ge7Idi8E7MPlaBADTiBgL28Dnm4wFOIARa7YcQpQbM7LGdyDA9gZhOfj6hVvnykETF9zkt8J_1roexxdzuiFHZFgFZHV0U0jeZT6nB1jp17WRFfWRL_Rku98MdFBz14pWvEU_V9on4ni-qYS2XaA_KAK0n"/>
+</div>
+</div>
+</section>
+<!-- Key Features (Bento Grid Style) -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="mb-20 space-y-4">
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight text-on-surface">Precision Engineered Components</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl">The core primitives that power OpenGradient's decentralized intelligence engine.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: BitQuant -->
+<div class="group relative flex flex-col bg-surface-container-lowest p-8 rounded-[2rem] editorial-shadow border border-outline-variant/5 hover:bg-surface-container-low transition-all duration-300">
+<div class="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">BitQuant</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Advanced quantization protocols that preserve model accuracy while reducing inference costs by up to 80%.</p>
+<div class="mt-auto pt-4 flex items-center text-primary font-semibold gap-2 cursor-pointer">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2: MemSync -->
+<div class="group relative flex flex-col bg-surface-container-lowest p-8 rounded-[2rem] editorial-shadow border border-outline-variant/5 hover:bg-surface-container-low transition-all duration-300 md:translate-y-8">
+<div class="h-14 w-14 rounded-2xl bg-tertiary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="sync_alt">sync_alt</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">MemSync</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Ultra-low latency memory synchronization for distributed model weights across global nodes.</p>
+<div class="mt-auto pt-4 flex items-center text-primary font-semibold gap-2 cursor-pointer">
+                        Explore Docs <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3: Twin.fun -->
+<div class="group relative flex flex-col bg-surface-container-lowest p-8 rounded-[2rem] editorial-shadow border border-outline-variant/5 hover:bg-surface-container-low transition-all duration-300">
+<div class="h-14 w-14 rounded-2xl bg-secondary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="face_retouching_natural">face_retouching_natural</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Twin.fun</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">The creative layer: Create and deploy personalized AI agents with a single click on our ecosystem.</p>
+<div class="mt-auto pt-4 flex items-center text-primary font-semibold gap-2 cursor-pointer">
+                        Get Creative <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Model Preview Section (Asymmetric Editorial Layout) -->
+<section class="py-32 bg-surface-container-low px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8 lg:pr-12">
+<h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">A Curated Hub for Neural Networks</h2>
+<p class="text-lg text-on-surface-variant">Don't start from zero. Access a library of verified, optimized models ready for deployment on the OpenGradient network. From LLMs to Computer Vision.</p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="mt-1 flex-shrink-0 h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xs" data-icon="check" style="font-variation-settings: 'wght' 700">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Verified Safety</h4>
+<p class="text-sm text-on-surface-variant">Every model undergoes automated safety and alignment audits.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 flex-shrink-0 h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xs" data-icon="check" style="font-variation-settings: 'wght' 700">check</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Instant API Endpoints</h4>
+<p class="text-sm text-on-surface-variant">Deploy to a global endpoint in under 30 seconds.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-3xl editorial-shadow space-y-4 translate-y-12">
+<div class="flex items-center justify-between">
+<span class="text-xs font-label uppercase tracking-widest text-primary font-bold">Llama-3-OG</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="verified" style="font-variation-settings: 'FILL' 1">verified</span>
+</div>
+<div class="h-1 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-primary w-2/3"></div>
+</div>
+<p class="text-xs text-on-surface-variant">Optimized for Gradient Cloud</p>
+<img alt="Model Visual" class="w-full h-32 object-cover rounded-xl" alt="Abstract vibrant neural network art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSSAp6plAX99uVbM90WlSYOxjfRhMHjubldoNY1czvWOrdAwMkN_K-0hnTBo-3AdzRhXoxF54gSZn_zIVwLlDvIkE4RCdn-wUrJmVOwOGrnLEePwBeI4_xMzAFxbvPBAlA64_AeWQE2suzVYoT4lwsUDAg2Hm8pYjM5MTdzwQxX5G7UEBs68WZlMfs0MOz6rAC-ms5D3kX2wHyyENyOtvAqTQmKQPgCyWXORgmM3zw2qsSLvN-lx6SMLqx_ybePUdq4QKtoKBGYNLO"/>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-3xl editorial-shadow space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-xs font-label uppercase tracking-widest text-tertiary font-bold">Mistral-7B</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant" data-icon="verified" style="font-variation-settings: 'FILL' 1">verified</span>
+</div>
+<div class="h-1 w-full bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-full"></div>
+</div>
+<p class="text-xs text-on-surface-variant">100% On-chain Verified</p>
+<img alt="Model Visual" class="w-full h-32 object-cover rounded-xl" alt="Futuristic glowing binary data stream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrUqjozz7uBl-i6H1uXK2Jv27MqmXA7zlCz9LzPQj_t4vbevi4n7WAEJL0jdeEym0n-DWw31UsFH32WjVEDf955Qx3YiBURbftZkJkmXjdxIbXevc3fVWIh0Efth42Sr54IlTgKunbRgRhtVGIycpFjjAJ0BItgCCFyrm5bstiFwo7qDH7-U3tEQZ9dP_xM2ArSoXY81vb5zcQu_sL0CtcLOzB5P6pKWz6FN1TlHmBrYYOesGsI-qB1nQ9D8sWjTpZSmphWTHCXGf_"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8">
+<div class="max-w-5xl mx-auto bg-primary rounded-[3rem] p-12 md:p-24 text-center space-y-8 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-50"></div>
+<div class="relative z-10 space-y-6">
+<h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">Ready to build the <br/>future of intelligence?</h2>
+<p class="text-primary-fixed/80 text-lg max-w-xl mx-auto leading-relaxed">Join 2,000+ developers building decentralized AI applications on OpenGradient.</p>
+<div class="pt-6">
+<button class="px-10 py-5 rounded-full bg-white text-primary text-lg font-bold editorial-shadow hover:scale-[1.05] transition-transform">
+                            Join the Network
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+  <div id="layout-footer"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

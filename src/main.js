@@ -4,12 +4,12 @@ const navHtml = `
 <nav class="fixed top-0 w-full z-50 bg-white/60 dark:bg-zinc-950/60 backdrop-blur-xl transition-all duration-300">
   <div class="flex justify-between items-center h-16 px-8 max-w-7xl mx-auto">
     <div class="flex items-center gap-8">
-      <a href="/" class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-headline">OpenGradient</a>
+      <a href="index.html" class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50 font-headline">OpenGradient</a>
       <div class="hidden md:flex gap-6 items-center">
-        <a class="nav-link text-sm font-medium tracking-tight" href="/">Home</a>
-        <a class="nav-link text-sm font-medium tracking-tight" href="/models/">Model Hub</a>
-        <a class="nav-link text-sm font-medium tracking-tight" href="/ecosystem/">Ecosystem</a>
-        <a class="nav-link text-sm font-medium tracking-tight" href="/community/">Community</a>
+        <a class="nav-link text-sm font-medium tracking-tight" href="index.html" data-path="/">Home</a>
+        <a class="nav-link text-sm font-medium tracking-tight" href="models/index.html" data-path="/models">Model Hub</a>
+        <a class="nav-link text-sm font-medium tracking-tight" href="ecosystem/index.html" data-path="/ecosystem">Ecosystem</a>
+        <a class="nav-link text-sm font-medium tracking-tight" href="community/index.html" data-path="/community">Community</a>
       </div>
     </div>
     <div class="flex items-center gap-4">
@@ -64,10 +64,27 @@ document.addEventListener('DOMContentLoaded', () => {
   if (footerContainer) footerContainer.innerHTML = footerHtml;
 
   // Highlight active link
+  // Base path logic to fix relative paths for deep pages (e.g. inside /models/)
+  const isDeepPage = window.location.pathname.includes('/models') || window.location.pathname.includes('/ecosystem') || window.location.pathname.includes('/community');
+  
+  if (isDeepPage) {
+    const brandLink = document.querySelector('a.font-headline');
+    if (brandLink) brandLink.href = '../index.html';
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+       const rawHref = link.getAttribute('href');
+       if (rawHref === 'index.html') link.setAttribute('href', '../index.html');
+       else link.setAttribute('href', '../' + rawHref);
+    });
+  }
+
+  // Highlight active link
   const currentPath = window.location.pathname;
   document.querySelectorAll('.nav-link').forEach(link => {
-    const href = link.getAttribute('href');
-    if (currentPath === href || (currentPath === '/' && href === '/')) {
+    const dataPath = link.getAttribute('data-path');
+    const isActive = dataPath === '/' ? (currentPath.endsWith('/') || currentPath.endsWith('index.html')) && !currentPath.includes('models') && !currentPath.includes('ecosystem') && !currentPath.includes('community') : currentPath.includes(dataPath);
+
+    if (isActive) {
       link.classList.add('text-teal-700', 'dark:text-teal-400', 'border-b-2', 'border-teal-700', 'dark:border-teal-400', 'pb-1');
       link.classList.remove('text-zinc-600', 'dark:text-zinc-400', 'hover:text-zinc-900');
     } else {

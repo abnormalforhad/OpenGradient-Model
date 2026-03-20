@@ -22,7 +22,14 @@
   <main class="pt-16">
 <!-- Hero Section -->
 <section class="relative overflow-hidden py-24 md:py-32 lg:py-48 px-8">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<!-- Hero Video Background -->
+<div class="absolute inset-0 w-full h-full z-0 pointer-events-none">
+    <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-20">
+        <source src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_30fps.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
 <div class="flex-1 space-y-8 z-10">
 <span class="label-md uppercase tracking-widest font-label text-primary font-bold">Intelligence for All</span>
 <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight text-on-surface">
